@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIUserReg.WelcomePage"
+             Title="Welcome"
+             BackgroundColor ="white" >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" x:Name="btnLogOut" Clicked="OnItemClicked"/>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout >
+       
+        <Label 
+            x:Name="lblUserName"
+            Text="Welcome"  
+            FontSize="25"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="#02425A"  
+            />
+    </VerticalStackLayout>
+</ContentPage>

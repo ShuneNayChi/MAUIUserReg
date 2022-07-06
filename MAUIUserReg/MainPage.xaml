@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIUserReg.MainPage" 
+             BackgroundColor ="#02425A"
+             Title="Log In or Register?">
+
+    <StackLayout Margin="15" Padding="30, 60, 30, 30">
+        <Label Text="Already a member? Log In" FontSize="20" TextColor="#ffffff"/>
+        <Label Text="New member? Register" FontSize="20" TextColor="#ffffff"/>
+        <Label Text="Username" TextColor="#ffffff"  FontSize="15" />
+        <Entry x:Name="txtUserName" TextColor="#ffffff" />
+        <Label Text="Password" TextColor="#ffffff"  FontSize="15" />
+        <Entry IsPassword="True" x:Name="txtPassword" TextColor="#ffffff" />
+        <Button x:Name="btnLogin" Text="Log In" BackgroundColor="white" Clicked="LoginButton_Clicked" TextColor="#02425A" />
+    
+        <Button x:Name="btnSignUp" Text="Register" BackgroundColor="white" Clicked="SignUpButton_Clicked" TextColor="#02425A" />
+    </StackLayout>
+
+</ContentPage>
